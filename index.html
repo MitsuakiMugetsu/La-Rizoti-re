@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <title>La Rizotière</title>
-  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="stylesheet" type="text/css" href="style-test.css">
 
 
   </head>
@@ -16,22 +16,44 @@
 
           <li>
              <a href="#">Accueil</a>
-          </li>
-          <li>
+          </li><li>
              <a href="#">Sommaire</a>
-          </li>
-          <li>
+          </li><li>
              <a href="#">Recettes</a>
-             <ul>
+             <ul class="accordion">
 
-                     <li>
-                        <a href="#">Poulet Gong Bao</a>
+                     <li class="has-sub">
+                       <label for="menu1">By "La Rizotière"</label>
+                       <input id="menu1" type="checkbox" name="menu" />
+                      <!-- <a href="#">By "La Rizotière"</a> -->
+                        <ul class="sub">
+
+                                <li>
+                                   <a href="#">Poulet Gong Bao</a>
+
+                                </li><li>
+                                   <a href="#">Shui Zhu</a>
+                                </li><!-- Corrige bug li -->
+                          </ul>
                      </li>
+                     <li class="has-sub">
+                       <label for="menu2">Recettes membres</label>
+                       <input id="menu2" type="checkbox" name="menu" />
+                      <!--  <a href="#">Recettes membres</a> -->
+                        <ul class="sub">
+
+                                <li>
+                                   <a href="#">mac</a>
+
+                                </li><li>
+                                   <a href="#">truc</a>
+                                </li><!-- Corrige bug li -->
+                          </ul>
+                     </li><!-- Corrige bug li -->
             </ul>
-          </li>
-          <li>
+          </li><li>
              <a href="#">A propos des auteurs</a>
-          </li>
+          </li><!-- Corrige bug li -->
 
   </ul>
 
