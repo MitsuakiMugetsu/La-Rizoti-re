@@ -28,7 +28,14 @@ aside
   width:200px;
   text-align: center;
   border-radius: 0 0 0 10px;
+  font-family: Impact;
+  font-size: 20px;
 
+}
+
+div#nolog
+{
+  padding-top: 12px;
 }
 
 div#log
