@@ -17,6 +17,58 @@ header
   background-size: cover;
 }
 
+aside
+{
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  width:200px;
+  text-align: center;
+  border-radius: 0 0 0 10px;
+
+}
+
+div#log
+{
+  display:none;
+}
+
+aside:hover div#nolog
+{
+  display:none;
+}
+
+aside:hover div#log
+{
+  display:block;
+
+}
+
+aside:hover
+{
+  height: 250px;
+  width: 100%;
+  border-radius: 0 0 0 0;
+}
+#log a
+{
+  color: white;
+}
+
+#backtotop
+{
+
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  height: 75px;
+}
+
+
+
 #menu, #menu ul{
 padding:0;
 margin:0;
