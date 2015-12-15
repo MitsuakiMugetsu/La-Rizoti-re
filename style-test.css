@@ -86,7 +86,8 @@ aside:hover
   position: fixed;
   bottom: 0px;
   right: 0px;
-  height: 75px;
+  width: 8%;
+  min-width: 50px;
 }
 
 
@@ -202,15 +203,14 @@ text-transform:inherit;
 color:#000;
 }
 
-
-
 .accordion {
-  max-width: 300px;
+  max-width: 100%;
   margin: 5em;
   padding: 0;
-  background: #333;
-  border-radius: 3px;
   overflow: hidden;
+  color: white;
+  height:200px;
+
 }
 .accordion ul {
   margin: 0;
@@ -224,14 +224,15 @@ color:#000;
   display: block;
   padding: 0.7em 1em;
   overflow: hidden;
-  background: -webkit-linear-gradient(#555, #444);
+  /*background: -webkit-linear-gradient(#555, #444);
   background: linear-gradient(#555, #444);
   border-bottom: 1px solid #333;
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2);*/
 }
 .accordion label:hover {
-  background: -webkit-linear-gradient(#666, #444);
-  background: linear-gradient(#666, #444);
+  /*background: -webkit-linear-gradient(#666, #444);
+  background: linear-gradient(#666, #444);*/
+  color:black;
 }
 .accordion input[type="radio"],
 .accordion input[type="checkbox"] {
@@ -252,6 +253,8 @@ color:#000;
   padding-left: 1.5em;
   background: rgba(0, 0, 0, 0.1);
 }
+
+
 .accordion input:checked + .sub > li {
   padding: 0.7em 1em;
   height: 1.4em;
