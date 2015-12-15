@@ -30,18 +30,31 @@ aside
   border-radius: 0 0 0 10px;
   font-family: Impact;
   font-size: 20px;
-
+  -moz-transition: .8s all .3s;
+  -webkit-transition: .8s all .3s;
+  transition: .8s all .3s;
+  overflow: hidden;
 }
+
+
 
 div#nolog
 {
   padding-top: 12px;
+  transition: .8s all .3s;
 }
 
 div#log
 {
-  display:none;
+  /*display:none;*/
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: .8s opacity .3s;
+  -webkit-transition: .8s opacity .3s;
+  transition: .8s opacity .3s;
+
 }
+
 
 aside:hover div#nolog
 {
@@ -50,7 +63,9 @@ aside:hover div#nolog
 
 aside:hover div#log
 {
-  display:block;
+  /*display:block;*/
+  visibility: visible;
+  opacity: 1;
 
 }
 
