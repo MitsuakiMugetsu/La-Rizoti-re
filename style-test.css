@@ -207,12 +207,8 @@ display:inherit;
 border-radius:0;
 width: 100%;
 }
-#menu ul li:hover{
-border-radius:0;
-}
-#menu ul li:last-child{
-border-radius:0 0 8px 8px;
-}
+
+
 #menu ul{
 
 z-index: 1000;
@@ -290,7 +286,7 @@ padding:8px 0;
 color:#fff;
 text-transform:inherit;
 }
-#menu li:hover a, #menu li li:hover a{
+#menu li:hover a{
 color:#000;
 }
 
@@ -317,10 +313,7 @@ color:#000;
   overflow: hidden;
 
 }
-.accordion label:hover
- {
-  color:black;
-}
+
 .accordion input[type="radio"],
 .accordion input[type="checkbox"] {
   display: none;
@@ -346,4 +339,14 @@ color:#000;
   padding: 0.7em 1em;
   height: 1.4em;
   opacity: 1;
+}
+
+.sub:last-child
+{
+  border-radius: 0 0 0 0
+}
+
+.accordion:last-child
+{
+  border-radius: 0 0 8px 8px
 }
